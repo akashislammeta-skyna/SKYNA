@@ -1,0 +1,28 @@
+// Version: 1.0.0
+type ContactId__246256953 = Nat;
+type ContactSubmission__93684224 =
+  {
+    email : Text;
+    id : ContactId__246256953;
+    message : Text;
+    name : Text;
+    phone : Text;
+    service_interest : Text;
+    submitted_at : Timestamp__306786231
+  };
+type Int__270357528 = Int__616954475;
+type Int__616954475 = Int;
+type Nat__490723111 = Nat__920180692;
+type Nat__920180692 = Nat;
+type Time__796480547 = Int__270357528;
+type Time__900049286 = Time__796480547;
+type Timestamp__306786231 = Time__900049286;
+actor {
+  stable nextId : [var Nat];
+  stable submissions :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?ContactSubmission__93684224]];
+      var elementIndex : Nat__490723111
+    }
+};

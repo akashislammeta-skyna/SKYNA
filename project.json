@@ -1,0 +1,20 @@
+{
+  "overview": "Professional company website for SKY NA — an app development studio that builds all types of mobile, web, and custom software solutions. Showcases company identity, services, portfolio, and contact information.",
+  "features": [
+    "Company introduction and hero banner",
+    "Services showcase with icons and descriptions",
+    "Portfolio section with project cards",
+    "Contact form with backend storage",
+    "Mobile-responsive navigation",
+    "Footer with contact details"
+  ],
+  "category": "business",
+  "tags": [
+    "company-website",
+    "app-development",
+    "portfolio",
+    "contact-form",
+    "professional"
+  ],
+  "last_updated": "2026-04-18T12:19:38.875Z"
+}

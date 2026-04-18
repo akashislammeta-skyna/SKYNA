@@ -1,0 +1,24 @@
+type Timestamp = int;
+type ContactSubmission = 
+ record {
+   email: text;
+   id: ContactId;
+   message: text;
+   name: text;
+   phone: text;
+   service_interest: text;
+   submitted_at: Timestamp;
+ };
+type ContactInput = 
+ record {
+   email: text;
+   message: text;
+   name: text;
+   phone: text;
+   service_interest: text;
+ };
+type ContactId = nat;
+service : {
+  listContactSubmissions: () -> (vec ContactSubmission) query;
+  submitContactForm: (input: ContactInput) -> (ContactSubmission);
+}
